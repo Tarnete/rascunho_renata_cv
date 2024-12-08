@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CvRenata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<style>
+    body {
+        background-image: url(imagens/—Slidesdocs—blue\ biology\ science\ health\ chart_ee23d1e074.jpg);
+        background-size: cover;
+        
+        width: 100%;
+        color: rgb(83, 14, 201);
+        text-align: left;
+        min-height: 100vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        background-color: white;
+
+    }
+
+    .container {
+        line-height: 30px;
+        width: 90%;
+        overflow-y: scroll;
+        height: 90vh;
+        padding: 15px 2%;
+        box-shadow: 0 0 5px rgb(83, 14, 201);
+        text-align: justify;
+
+    }
+
+    .container::-webkit-scrollbar {
+        width: 14px;
+        border: 1px solid rgb(83, 14, 201);
+
+    }
+
+    .container::-webkit-scrollbar-thumb {
+        background-color: rgb(83, 14, 201);
+        border-radius: 6px;
+
+    }
+
+    .hr_dados1,
+    .hr_01,
+    .hr_02,
+    .hr_03,
+    .hr_04,
+    .hr_apresentação,
+    .hr_portifólio {
+        border-top: medium dashed rgb(83, 14, 201);
+        border-bottom: medium dashed rgb(83, 14, 201);
+        height: 5px;
+        overflow: visible;
+        padding: 0;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 50px;
+
+
+    }
+
+
+    .hr_dados1::after,
+    .hr_01::after,
+    .hr_02::after,
+    .hr_03::after,
+    .hr_04::after,
+    .hr_apresentação::after,
+    .hr_portifólio::after {
+
+        font-size: 1.4em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+
+    }
+
+    .hr_dados1::after {
+        content: "RENATA VASCONCELOS ALVES SILVEIRA";
+
+
+    }
+
+
+
+    .hr_01::after {
+        content: "FORMAÇÃO ACADÊMICA";
+        /* font-size: 1.2em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+        padding: 20px;
+        background-color: black; */
+
+    }
+
+
+    .hr_02::after {
+        content: "EXPERIÊNCIA PROFISSIONAL";
+        /* font-size: 1.2em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+        padding: 20px;
+        background-color: black; */
+    }
+
+
+    .hr_03::after {
+        content: "FORMAÇÃO CONTINUADA";
+        /* font-size: 1.2em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+        padding: 20px;
+        background-color: black; */
+
+    }
+
+
+    .hr_04::after {
+        content: "DEMAIS ATUAÇÕES";
+        /* font-size: 1.2em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+        padding: 20px;
+        background-color: black; */
+    }
+
+    .hr_apresentação::after {
+        content: "APRESENTAÇÃO";
+        /* font-size: 1.2em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+        padding: 20px;
+        background-color: black; */
+
+    }
+
+    .hr_portifólio::after {
+        content: "PORTIFÓLIO";
+        /* font-size: 1.2em;
+        padding: 0 0.3em;
+        top: -0.7em;
+        background: #fff;
+        display: inline;
+        position: relative;
+        padding: 20px;
+        background-color: black; */
+
+    }
+
+    #informações-e-foto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+        line-height: 30px;
+
+
+    }
+
+    #foto-da-renata {
+        margin-left: 50px;
+        border-radius: 10px;
+    }
+
+
+    #carta-de-apresentação p {
+        text-indent: 40px;
+
+    }
+
+    #sumario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h4 {
+        text-decoration: underline;
+    }
+
+    #FACD ,
+    #EXP,
+    #FCONT,
+    #DEMAIS,
+    #PORT
+    {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(83, 14, 201);
+        /* Cor de fundo */
+        color: white;
+        /* Cor do texto */
+        text-align: center;
+        text-decoration: none;
+        /* Remove o sublinhado */
+        border-radius: 5px;
+        /* Bordas arredondadas */
+        transition: background-color 0.3s;
+        /* Efeito de transição */
+       
+       
+    }
+    
+    
+    #FACD:hover
+    #EXP:hover,
+    #FCONT:hover,
+    #DEMAIS:hover,
+    #PORT:hover {
+        background-color: #4200b3;
+        /* Cor ao passar o mouse */
+    }
+
+    #Voltar-btn{
+
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(83, 14, 201);
+        /* Cor de fundo */
+        color: white;
+        /* Cor do texto */
+        text-align: center;
+        text-decoration: none;
+        /* Remove o sublinhado */
+        border-radius: 5px;
+        /* Bordas arredondadas */
+        transition: background-color 0.3s;
+        /* Efeito de transição */
+
+    }
+
+</style>
+    
+    
+    
+
+
+
+<body>
+    <div class="container"><br><br>
+
+        <div id="dados1"><!-- barra -->
+            <hr class="hr_dados1">
+        </div>
+
+        <div id="informações-e-foto">
+
+            <div id="informações">
+                <p>Professora e Pesquisadora em Ciências Naturais e Biologia<br>
+                    35 anos | Jd. Jussara – São Paulo<br>
+                    Tel: (11) 94916-3552 | E-mail: vasconcelos.renata@usp.br<br>
+                    LinkedIn: linkedin.com/in/professorarenatavas<br>
+                </p>
+            </div>
+
+            <img src="imagens/Re02CUTTED.png" alt="Re" width="200" id="foto-da-renata">
+
+        </div>
+
+        <hr class="hr_apresentação"><!-- barra carta de apresentaçaõ -->
+
+
+        <div id="carta-de-apresentação">
+
+            <p>Minha formação acadêmica inclui uma Licenciatura em Ciências Biológicas, complementada por diversas
+                especializações e pós-graduações, como o Mestrado em Ensino de Ciências e Matemática pela UNIFESP e a
+                Pós-Graduação em Ensino de Ciências pela UFABC. Atualmente, estou cursando o Doutorado em Ensino de
+                Ciências na USP, o que reflete meu compromisso contínuo com a educação e a pesquisa.
+            </p>
+
+
+
+            <p>Ao longo da minha carreira, tive a oportunidade de lecionar em diversas instituições renomadas, como o
+                Colégio Maria Imaculada e a Secretaria Municipal da Educação de São Paulo. Nessas posições, desenvolvi e
+                implementei metodologias diversificadas e dinâmicas, promovendo um ambiente de aprendizado inclusivo e
+                engajador. Além disso, participei ativamente de projetos de pesquisa e extensão, como o Grupo de
+                Pesquisa em Educação em Ciência e Complexidade (ECCo) na USP, onde contribuí para a formação inicial e
+                continuada de professores.
+            </p>
+
+            <p> Minha experiência prática inclui a orientação de projetos de pesquisa, desenvolvimento de projetos
+                práticos e experimentais, e a utilização de tecnologias educacionais para enriquecer o processo de
+                ensino-aprendizagem. Acredito que essas habilidades são essenciais para inspirar o interesse científico
+                e desenvolver o pensamento crítico e reflexivo dos estudantes.
+            </p>
+
+            <p> Para mais detalhes sobre minha trajetória acadêmica e profissional, segue meu currículo.
+
+            </p>
+
+
+
+
+
+
+            <div id="sumario">
+
+                <a id="FACD" href="#ancora_FORMAÇÃO ACADÊMICA">Formação Acadêmica</a><br>
+                <a id = "EXP" href="#ancora_EXPERIÊNCIA">Experiência Profissional</a><br>
+                <a id="FCONT" href="#ancora_FORMAÇÃO_CONTINUADA">Formação Continuada</a><br>
+                <a id="DEMAIS" href="#ancora_DEMAIS_ATUAÇÕES">Demais Atuações</a><br>
+                <a id="PORT" href="#ancora_PORTIFÓLIO">Portifólio</a>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div id="ancora_FORMAÇÃO ACADÊMICA">
+        </div>
+
+        <hr class="hr_01"><!-- barra -->
+
+        <div id="FORMAÇÃO ACADÊMICA">
+
+
+
+            <h4>Pós-Graduação</h4>
+            <ul>
+                <li>
+                    Doutorado em Ensino de Ciências - PIEC, USP | 2021.2 - 2026.1 (em andamento)
+                </li>
+
+                <li>
+                    Mestrado em Ensino de Ciências e Matemática, UNIFESP | 2020
+                </li>
+
+                <li>Pós-Graduação em Ensino de Ciências - Ciência é 10, UFABC | 2022
+                </li>
+
+                <li>Pós-Graduação em Práticas Educacionais em Ciências e Pluralidade, UTFPR | 2020
+                </li>
+
+                <li>Especialização em Princípios e Práticas para a Educação Bilíngue, Instituto Singularidades | 2022
+                </li>
+
+            </ul>
+
+
+
+
+            <h4>Graduação</h4>
+            <ul>
+                <li>
+                    Licenciatura em Química, Universidade Virtual do Estado de São Paulo, UNIVESP | 2018
+                </li>
+
+                <li>
+                    Licenciatura em Ciências Biológicas, Centro Universitário das Faculdades Metropolitanas Unidas, FMU
+                    |
+                    2024
+                </li>
+
+                <li>Licenciatura em Ciências Naturais, Universidade Virtual do Estado de São Paulo, UNIVESP | 2016
+                </li>
+
+                <li>Licenciatura e Bacharelado em Ciências Biológicas, Ecologia, Universidade Veiga de Almeida, UVA |
+                    2013
+                </li>
+
+
+
+            </ul>
+
+           
+
+            <div id="Voltar-btn">
+                <button>Voltar</button>
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div id="ancora_EXPERIÊNCIA">
+        </div>
+
+        <hr class="hr_02"> <!-- barra -->
+
+        <div class="EXPERIÊNCIA PROFISSIONAL">
+            <h4>
+                Professora de Ciências Naturais | Colégio Maria Imaculada (CMISP)
+                Abril 2024 – Atual
+            </h4>
+            <ul>
+
+                <li>
+                    Responsável por ministrar aulas de Ciências Naturais para alunos do 6º ao 9º ano, utilizando
+                    metodologias diversificadas e dinâmicas para promover um ambiente de aprendizado inclusivo e
+                    engajador.
+                </li>
+
+                <li>
+                    Desenvolvimento de projetos práticos e experimentais que incentivam o pensamento crítico,
+                    criatividade e
+                    colaboração.
+                </li>
+
+                <li>
+                    Planejamento curricular e gestão de conteúdos de acordo com as diretrizes pedagógicas e alinhamento
+                    interdisciplinar.
+                </li>
+
+
+
+
+            </ul>
+
+            <h4>
+                Professora de Ciências | Secretaria Municipal da Educação de São Paulo (SME SP)
+                Janeiro 2020 – Atual
+            </h4>
+            <ul>
+                <li>Planejamento e execução de aulas de Ciências Naturais para os anos finais do Ensino Fundamental e
+                    para a
+                    EJA, com foco em metodologias inclusivas e personalizadas para atender diferentes perfis de
+                    aprendizagem.</li>
+                <li>Orientação de projetos de pesquisa (TCA), promovendo o desenvolvimento de habilidades investigativas
+                    e
+                    da curiosidade científica.</li>
+            </ul>
+
+            <h4>
+                Pesquisadora | Universidade de São Paulo (USP) Outubro 2020 – Atual
+            </h4>
+            <ul>
+
+                <li>Participação ativa no Grupo de Pesquisa em Educação em Ciência e Complexidade (ECCo), com foco na
+                    formação inicial e continuada de professores.
+                </li>
+
+
+                <li>Representante discente em comitês de seleção de mestrado e doutorado, e na comissão de bolsas do
+                    PIEC-USP.
+                </li>
+
+                <li>Pesquisa em Virologia, desenvolvendo estudos de fármacos anti-SARS-CoV-2 e realizando procedimentos
+                    laboratoriais de alta complexidade.
+                </li>
+
+
+            </ul>
+
+            <h4>
+                Professora de Ciências, Biologia e Tecnologias | Fundação Bradesco
+                Janeiro 2021 – Dezembro 2021
+            </h4>
+            <ul>
+                <li>Responsável por ministrar aulas de Ciências Naturais e Biologia para o Ensino Fundamental II e
+                    Médio,
+                    com foco em tecnologias educacionais e integração de projetos interdisciplinares.
+                </li>
+
+                <li>Criação de aulas que utilizam plataformas digitais e ferramentas de ensino que incentivam o
+                    aprendizado
+                    ativo.
+                </li>
+            </ul>
+
+
+            <h4>
+                Professora de Biologia | Cursinho Pré-Vestibular EACH-USP Junho 2020 – Junho 2021
+            </h4>
+
+            <ul>
+                <li>
+                    Preparação de estudantes para vestibulares com ênfase em Biologia Geral e Biologia Celular,
+                    aplicando
+                    metodologias didáticas que facilitam a compreensão dos temas mais desafiadores.
+                </li>
+
+            </ul>
+
+
+            <h4>
+                Professora de Ciências e Biologia | Secretaria Estadual de Educação
+                Janeiro 2018 – Janeiro 2021
+            </h4>
+            <ul>
+                <li>Planejamento e execução de aulas no Ensino Fundamental II, Médio e EJA, com foco em práticas que
+                    incentivam a
+                    autonomia e o desenvolvimento integral dos alunos.
+                </li>
+            </ul>
+
+            <h4>
+                Pesquisadora | Instituto Federal de São Paulo, IFSP – Pesquisadora em Educação e Saúde Coletiva
+                Março 2020 – Janeiro 2021
+            </h4>
+
+            <ul>
+                <li>
+                    Desenvolvimento de projetos no programa de extensão “Saúde Sem Fronteiras”, voltados à prevenção de
+                    doenças e
+                    a promoção da saúde pública nas escolas.
+                </li>
+            </ul>
+
+            <h4>Professora de Ciências e Biologia | SESI São Paulo – Carapicuíba
+                Janeiro 2018 – Dezembro 2020
+            </h4>
+
+            <ul>
+                <li>Atuação como professora substituta para o Ensino Fundamental II e Médio, ministrando aulas de
+                    Ciências e
+                    Biologia, com foco no desenvolvimento de projetos pedagógicos que promovem o engajamento estudantil.
+                </li>
+            </ul>
+
+            <h4>Professora de Ciências e Biologia | Colégio Henrique I
+                Março 2018 – Outubro 2020
+            </h4>
+
+            <ul>
+
+                <li>Responsável pela elaboração e implementação de aulas de Ciências e Biologia para o Ensino
+                    Fundamental II
+                    (F2) e Ensino Médio (EM), utilizando metodologias ativas que promovem o engajamento dos alunos.
+                </li>
+
+
+            </ul>
+
+
+
+            <h4>Professora de Apoio Pedagógico de Ciências e Biologia | Colégio Hebraico Brasileiro Renascença
+                Fevereiro 2018 – Junho 2019
+            </h4>
+            <ul>
+                <li>Prestação de apoio pedagógico individualizado para estudantes dos anos finais do Ensino Fundamental
+                    e
+                    Ensino Médio em Ciências e Biologia, com foco em reforço escolar, adaptação curricular e foco em
+                    pré-vestibular.
+                </li>
+
+                <li>
+                    Colaboração direta com professores titulares para criar estratégias pedagógicas que auxiliassem
+                    alunos
+                    com dificuldades de aprendizagem ou que necessitavam de maior suporte educacional.
+                </li>
+            </ul>
+
+            <h4>Pesquisadora e Estagiária Docente (Mestrado) | Universidade Federal de São Paulo (UNIFESP)
+                Agosto 2017 – Agosto 2020
+            </h4>
+            <ul>
+                <li>Estágio docente no Ensino Superior (PAD) na disciplina de Práticas Pedagógicas em Ensino de
+                    Ciências, no
+                    curso de Licenciatura em Ciências.
+                </li>
+
+                <li>
+                    Participação em projetos de pesquisa sobre diálogo e linguagem na formação de professores e Educação
+                    em
+                    Ciências.
+                </li>
+            </ul>
+
+
+            <h4>
+                Estagiária de Química | Instituto de Criminalística (NAI - Polícia Científica)
+                Outubro 2017 – Abril 2018
+            </h4>
+
+            <ul>
+                <li>Atuação no preparo de materiais, reagentes e execução de testes de análise toxicológica e
+                    identificação
+                    de substâncias químicas em amostras coletadas em investigações criminais.
+                </li>
+
+                <li>
+                    Suporte às equipes de investigação, colaborando com análises químicas periciais em diversas fases
+                    dos
+                    processos.
+                </li>
+            </ul>
+
+
+            <h4>Bióloga Responsável Técnica | D.D.Drin Comércio LTDA
+                Fevereiro 2014 – Agosto 2017
+            </h4>
+            <ul>
+                <li>Responsável pela gestão de projetos ambientais e sanitários, garantindo o cumprimento das normas de
+                    segurança e legislação ambiental.
+
+                </li>
+                <li>Supervisão técnica em atividades de controle de pragas urbanas e elaboração de relatórios técnicos
+                    ambientais.</li>
+                <li>Implementação de práticas de biossegurança e desenvolvimento de procedimentos operacionais voltados
+                    à
+                    mitigação de riscos biológicos e químicos.</li>
+
+
+            </ul>
+            <br>
+
+
+
+
+
+
+
+
+
+            <div id="ancora_FORMAÇÃO_CONTINUADA">
+            </div>
+
+            <hr class="hr_03"><!-- barra -->
+
+            <h4 class="principais">PRINCIPAIS CURSOS</h4>
+
+            <ul>
+                <li>Curso de Doutoramento: “Key Concepts of Cultural-Historical Activity Theory” – Tampere University,
+                    Finlândia (2022) - Participação em curso de nível doutoral com foco em conceitos-chave da teoria da
+                    atividade histórico-cultural aplicada à educação e ao desenvolvimento psicológico.
+                </li> <br>
+
+                <li>Curso de Doutoramento: “Key Concepts of Cultural-Historical Activity Theory” – Tampere University,
+                    Finlândia (2022) - Participação em curso de nível doutoral com foco em conceitos-chave da teoria da
+                    atividade histórico-cultural aplicada à educação e ao desenvolvimento psicológico.
+                </li><br>
+
+                <li>Professora Capacitadora de Ciências Biológicas – Mostra de Profissões, USP (2021) -Atuando como
+                    professora capacitadora, orientei estudantes interessados em carreiras nas áreas de Biociências e
+                    Educação, destacando a importância da formação contínua.
+                </li><br>
+
+                <li>Criadora de Conteúdo Pedagógico – Projeto “Trilhas Pedagógicas”, Ampliare Educacional (2020) -
+                    Desenvolvimento de cinco módulos de material didático focado em práticas no ensino de Ciências,
+                    utilizando plataformas narrativas para promover a interação e o engajamento dos alunos.
+                </li><br>
+
+                <li>Coordenadora e Ministrante do Curso: “Ciências Forenses: Uma Proposta de Ensino Contextualizada” –
+                    USP
+                    Escola e UNIFESP (2017, 2018 e 2019) - Desenvolvimento e aplicação de cursos voltados ao ensino de
+                    Ciências Forenses, utilizando uma abordagem prática e interdisciplinar para conectar conceitos
+                    científicos com cenários do cotidiano.
+                </li><br>
+
+                <li>
+                    Redatora de Capítulo de Livro: “Futuros Professores de Ciências” – Editora Educación Editora, 2018
+                </li><br>
+
+                <li>
+                    Coautoria no livro “Nuevos Retos en la Enseñanza de las Ciencias”, contribuindo com discussões sobre
+                    os
+                    desafios e as inovações na formação de professores de Ciências.
+                </li><br>
+
+                <li>
+                    Formação de Mentores – SerProf Kanttum (2020) - Capacitação em mentoria educacional, voltada para o
+                    desenvolvimento de competências e habilidades de professores, com foco em liderança educacional e
+                    acompanhamento pedagógico.
+                </li><br>
+            </ul>
+        </div>
+
+
+        <div id="ancora_ATUALIZAÇÃO">
+        </div>
+
+        <h4 class="ATUALIZAÇÃO" id="ATUALIZAÇÃO">
+            CURSOS DE ATUALIZAÇÃO
+        </h4>
+
+
+        <ul>
+
+            <li>Biossegurança e Boas Práticas de Laboratório – ICB USP (2020)</li><br>
+            <li>Armazenamento, Manuseio e Descarte de Produtos Químicos – ICB USP (2020)</li><br>
+            <li>Metabolismo Humano e Obesidade nas Sociedades Atuais – ICB USP (2018)</li><br>
+            <li>A Botânica no Cotidiano – IB USP (2015)</li><br>
+            <li>Redescobrindo a Biologia Celular – IB USP (2014)</li><br>
+            <li>Perícia Ambiental – CRBio 02 (2011)</li><br>
+            <li>Educação Ambiental no Processo de Licenciamento Ambiental – CRBio 02 (2011)</li><br>
+
+        </ul>
+
+        <h4>
+            IDIOMAS E INTERCÂMBIOS
+        </h4>
+        <ul>
+            <li>
+                Inglês avançado.
+            </li><br>
+            Experiência internacional em intercâmbio pela International House IH, Dublin, Irlanda (2022).
+            <li>
+                Trabalho voluntário com apoio docente para refugiados na The National Volunteering Database (2022).
+            </li><br>
+
+        </ul>
+
+        <h4>
+            + TECNOLOGIA
+        </h4>
+        <ul>
+            <li>
+                lataformas Educacionais: Moodle, Microsoft Teams, Zoom, Google Meeting & Classroom, Loom
+                Ferramentas de Aprendizagem Interativa: Ferramenta PLURAL, Escape Online, Laboratórios Virtuais, Quizz
+                Online,
+                Kahoot
+            </li><br>
+            <li>
+                Softwares: Word, Excel, PowerPoint, Photoshop
+            </li><br>
+
+        </ul>
+
+        <br>
+
+
+        <div id="ancora_DEMAIS_ATUAÇÕES">
+        </div>
+
+        <hr class="hr_04"><!-- barra -->
+
+        <div class="DEMAIS" id="DEMAIS ATUAÇÕES">
+
+            <ul>
+                <li>Participação em Bancas de Trabalhos de Iniciação Científica – Colégio Renascença e FEBRACE (2022 e
+                    2023)
+                    Participação como avaliadora de projetos de iniciação científica, fomentando o desenvolvimento de
+                    pesquisas de excelência em estudantes do Ensino Médio.
+                </li><br>
+
+                <li>Embaixadora de Saúde Planetária – IEA/USP (2021 – 2022) Colaborei ativamente em iniciativas de Saúde
+                    Planetária, promovendo a conscientização e educação sobre temas relacionados à sustentabilidade e
+                    saúde
+                    global.
+                </li><br>
+
+                <li>Orientação em Olimpíadas de Ciências – OBS, ONC, OBC e OBB Orientadora de estudantes participantes
+                    de
+                    olimpíadas científicas, incentivando a preparação para competições nacionais e internacionais nas
+                    áreas
+                    de Ciências e Biologia.
+                </li><br>
+
+                <li>Voluntária na Casa Ronald McDonald – Rio de Janeiro (2013) Trabalho voluntário com crianças em
+                    tratamento contra o câncer, proporcionando apoio educacional e emocional.
+                </li><br>
+
+                <li>Premiada com o Prêmio “Universidade e Escola” – Universidade Veiga de Almeida (2013) - Projeto de
+                    destaque em Zoologia e Educação Ambiental, promovendo o uso de práticas sociais na educação de
+                    Ciências.
+                </li><br>
+
+                <li>Colaboradora no Projeto REAMAR – Universidade Estadual do Rio de Janeiro (UERJ) (2012) - Projeto
+                    focado
+                    em conservação ambiental e educação para a sustentabilidade, promovendo a conscientização sobre
+                    ecossistemas marinhos e o impacto humano.
+                </li><br>
+
+            </ul>
+        </div>
+
+
+
+
+
+        <div id="ancora_PORTIFÓLIO">
+        </div>
+
+        <hr class="hr_portifólio"><!-- barra -->
+
+
+        <div class="portifólio">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- colocar foto ao lado do texto, construir o portifólio-->
+
+
+
+
+
+</body>
+
+</html>
